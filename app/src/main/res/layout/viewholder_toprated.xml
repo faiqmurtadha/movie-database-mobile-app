@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageTopRated"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/rankTopRated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@id/imageTopRated"
+        app:layout_constraintTop_toTopOf="@id/imageTopRated"
+        android:background="@drawable/number_background"/>
+    
+    <TextView
+        android:id="@+id/titleTopRated"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="2"
+        app:layout_constraintTop_toTopOf="@+id/imageTopRated"
+        app:layout_constraintStart_toEndOf="@+id/imageTopRated"/>
+
+    <LinearLayout
+        android:id="@+id/detailsTopRated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleTopRated"
+        app:layout_constraintStart_toEndOf="@+id/imageTopRated"
+        android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/yearTopRated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YearView"
+                android:textSize="12sp"
+                android:textColor="@color/main_shade"/>
+
+            <TextView
+                android:id="@+id/durationTopRated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="durationView"
+                android:textSize="12sp"
+                android:layout_marginStart="14dp"
+                android:textColor="@color/main_shade"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ratingTopRated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTopRated"
+        app:layout_constraintStart_toEndOf="@+id/imageTopRated"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/starTopRated"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/star" />
+
+        <TextView
+            android:id="@+id/scoreTopRated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RatingView"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

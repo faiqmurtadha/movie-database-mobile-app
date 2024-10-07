@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView
+        android:id="@+id/imageFilmSearch"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"/>
+    
+    <TextView
+        android:id="@+id/titleFilmSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="@+id/imageFilmSearch"
+        app:layout_constraintStart_toStartOf="@+id/imageFilmSearch"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilmSearch"/>
+
+    <TextView
+        android:id="@+id/yearFilmSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="10sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/main_shade"
+        app:layout_constraintEnd_toEndOf="@+id/titleFilmSearch"
+        app:layout_constraintStart_toStartOf="@+id/titleFilmSearch"
+        app:layout_constraintTop_toBottomOf="@+id/titleFilmSearch"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
